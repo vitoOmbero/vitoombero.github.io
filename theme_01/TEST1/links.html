@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperinks</title>
+</head>
+<style>
+    table {
+        padding: 0;
+        border: 2px solid rgb(140 140 140);
+    }
+
+    th {
+        border: 1px solid rgb(140, 140, 140);
+    }
+
+    table tr td {
+        border-bottom: 3px solid rgb(160 160 160);
+        border-right: 1px solid rgb(160 160 160);
+    }
+    table tr td:last-child{
+        border-right: none;
+    }
+    table tr:first-child td{
+        border-top: 1px solid rgb(140, 140, 140);
+    }
+    table tr:last-child td{
+        border-bottom: none;
+    }
+</style>
+<body>
+    <table cellspacing="0" cellpadding="0">
+        <caption>Оптимальные записи гиперссылок</caption>
+        <thead>
+            <th scope="col" rowspan="2">
+                Мы находимся на странице
+            </th>
+            <th scope="col">
+                Хотим сделать ссылку на страницу
+            </th>
+            <th scope="col">
+                Гиперссылка
+            </th>
+            <th scope="col">
+                HTML
+            </th>
+            <th scope="col">
+                Reason
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>http://finance.tut.ru/</td>
+                <td>http://finance.tut.ru/news362712.html</td>
+                <td>
+                    <pre>&lt;a href="/news362712.html" target="_self" title="Origin-relative URL"&gt; News &lt;/a&gt;</pre>
+                </td>
+                <td>
+                    <a href="/news362712.html" target="_self" title="Origin-relative URL"> News </a>
+                </td>
+                <td>
+                    <p>Открытие на с уходом из заглавной страницы раздела сайта</p>
+                </td>
+            </tr>
+            <tr>
+                <td>http://afisha.tut.ru/places/Minsk/Karting</td>
+                <td>http://afisha.tut.ru/place_uniq.php?up=2438</td>
+                <td>
+                    <pre>&lt;a href="//afisha.tut.ru/place_uniq.php?up=2438" target="_blank" title="Scheme-relative URL to new page"&gt; Karting in Minsk &lt;/a&gt;</pre>
+                </td>
+                <td>
+                    <a href="//afisha.tut.ru/place_uniq.php?up=2438" target="_top" title="Scheme-relative URL to this tab or window"> Karting in Minsk </a>
+                </td>
+                <td>
+                    <p>Открытие с уходом из неизвестного места со страницы-каталога на подробную страницу элемента каталога</p>
+                </td>
+            </tr>
+            <tr>
+                <td>http://sport.tut.ru/catalog/</td>
+                <td>http://pogoda.tut.ru/favorites/</td>
+                <td><pre>&lt;a href="//pogoda.tut.ru/favorites/" target="_blank" title="Scheme-relative URL to new tab or window"&gt; Погода в моих местах &lt;/a&gt;</td>
+                <td><a href="//pogoda.tut.ru/favorites/" target="_blank" title="Scheme-relative URL to new tab or window"> Погода в моих местах </a></td>
+                <td>
+                    <p>Открытие с просмотром дополнительной страницы на другом поддомене с уходом из неизвестного места</p>
+                </td>
+            </tr>
+            <tr>
+                <td>http://auto.tut.ru/catalog/search/</td>
+                <td>http://auto.tut.ru/catalog/search/?str=Lukoil</td>
+                <td><pre>&lt;a href="/?str=Lukoil" target="_top" title="Scheme-relative URL to current tab or window"&gt; Новые Lukoil &lt;/a&gt;</td>
+                <td><a href="/?str=Lukoil" target="_top" title="Scheme-relative URL to current tab or window"> Новые Lukoil </a></td>
+                <td>
+                    <p>Открытие с просмотром в текущей в текущей вкладке с заменой содержимого текущего view каталога</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<footer>
+    <hr>
+    <a href="./animal_language4.html" title="See in Windows-1251 encoding">Назад 
+    </a>
+    <a href="./aaa.html" title="">Далее 
+    </a>
+</footer>
+</html>
