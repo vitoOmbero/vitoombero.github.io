@@ -7,27 +7,47 @@
     <title>&#x1F4C2 TEST1</title>
 </head>
 <style>
-        ul {
+    ul {
         font-size: xx-large;
+        list-style-type: none;
     }
-    ul .html {
-        list-style-image: url("https://vitoombero.github.io/img/html-39.svg");
+    ul li:before {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 35px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 35px;
     }
-    ul .txt {
-        list-style-image: url("https://vitoombero.github.io/img/txt-47.svg");
+    ul li.html {
+        background-image: url("https://vitoombero.github.io/img/html-39.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
-    ul .dir {
-        list-style-image: url("https://vitoombero.github.io/img/folder-directory.svg");
+    ul li.txt {
+        background-image: url("https://vitoombero.github.io/img/txt-47.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
-    ul .cdup {
-        list-style-image: url("https://vitoombero.github.io/img/level-up-8.svg");
+    ul li.dir {
+        background-image: url("https://vitoombero.github.io/img/folder-directory.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
-    ul .img {
-        list-style-image: url("https://vitoombero.github.io/img/picture-file-9.svg");
+    ul li.cdup {
+        background-image: url("https://vitoombero.github.io/img/level-up-8.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    ul li.img  {
+        background-image: url("https://vitoombero.github.io/img/picture-file-9.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 </style>
 <body>
-    <h1>&#x1F4C2 TEST1</h1>
+    <h1><img src="https://vitoombero.github.io/img/open-folder-directory.svg" height="25px"> TEST1</h1>
     <ul>
         <li class="cdup"><a href="../index.html">..</a></li>
         <li class="html"><a href="animal_language.html">animal_language.html</a></li>
