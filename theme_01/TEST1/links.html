@@ -31,24 +31,26 @@
     </style>
 </head>
 <body>
-    <table cellspacing="0" cellpadding="0">
+    <table>
         <caption>Оптимальные записи гиперссылок</caption>
         <thead>
-            <th scope="col" rowspan="2">
-                Мы находимся на странице
-            </th>
-            <th scope="col">
-                Хотим сделать ссылку на страницу
-            </th>
-            <th scope="col">
-                Гиперссылка
-            </th>
-            <th scope="col">
-                HTML
-            </th>
-            <th scope="col">
-                Reason
-            </th>
+            <tr>
+                <th scope="col" rowspan="2">
+                    Мы находимся на странице
+                </th>
+                <th scope="col">
+                    Хотим сделать ссылку на страницу
+                </th>
+                <th scope="col">
+                    Гиперссылка
+                </th>
+                <th scope="col">
+                    HTML
+                </th>
+                <th scope="col">
+                    Reason
+                </th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -81,7 +83,7 @@
             <tr>
                 <td>http://sport.tut.ru/catalog/</td>
                 <td>http://pogoda.tut.ru/favorites/</td>
-                <td><pre>&lt;a href="//pogoda.tut.ru/favorites/" target="_blank" title="Scheme-relative URL to new tab or window" rel="noopener"&gt; Погода в моих местах &lt;/a&gt;</td>
+                <td><pre>&lt;a href="//pogoda.tut.ru/favorites/" target="_blank" title="Scheme-relative URL to new tab or window" rel="noopener"&gt; Погода в моих местах &lt;/a&gt;</pre></td>
                 <td><a href="//pogoda.tut.ru/favorites/" target="_blank" title="Scheme-relative URL to new tab or window" rel="noopener"> Погода в моих местах </a></td>
                 <td>
                     <p>Открытие с просмотром дополнительной страницы на другом поддомене с уходом из неизвестного места без возврата по истории переходов</p>
@@ -90,7 +92,7 @@
             <tr>
                 <td>http://auto.tut.ru/catalog/search/</td>
                 <td>http://auto.tut.ru/catalog/search/?str=Lukoil</td>
-                <td><pre>&lt;a href="/?str=Lukoil" target="_top" title="Scheme-relative URL to current tab or window"&gt; Новые Lukoil &lt;/a&gt;</td>
+                <td><pre>&lt;a href="/?str=Lukoil" target="_top" title="Scheme-relative URL to current tab or window"&gt; Новые Lukoil &lt;/a&gt;</pre></td>
                 <td><a href="/?str=Lukoil" target="_top" title="Scheme-relative URL to current tab or window"> Новые Lukoil </a></td>
                 <td>
                     <p>Открытие с просмотром в текущей в текущей вкладке с заменой содержимого текущего view каталога</p>
