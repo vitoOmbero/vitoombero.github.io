@@ -40,7 +40,7 @@
             content: '';
             height: 25px;
             width: 25px;
-            margin-left: 40px;
+            margin-left: 50px;
         }
         ul li.html {
             background-image: url("https://vitoombero.github.io/img/html-39.svg");
@@ -62,15 +62,21 @@
             background-image: url("https://vitoombero.github.io/img/picture-file-9.svg");
             background-repeat: no-repeat;
         }
+        ul li.unchecked:before {
+            content: '👀';
+        }
+        ul li.checked:after {
+            content: '✔';
+        }
     </style>
 </head>
 <body>
     <h1><img src="https://vitoombero.github.io/img/open-folder-directory.svg" height="25px" alt="open folder image"> theme_01</h1>
     <ul>
         <li class="cdup"><a href="../index.html">..</a></li>
-        <li class="dir"><a href="TEST1/index.html">TEST1</a></li>
-        <li class="dir"><a href="DIARY/index.html">DIARY</a></li>
-        <li class="dir"><a href="VIZBOR/index.html">VIZBOR</a></li>
+        <li class="dir unchecked"><a href="TEST1/index.html">TEST1</a></li>
+        <li class="dir unchecked"><a href="DIARY/index.html">DIARY</a></li>
+        <li class="dir unchecked"><a href="VIZBOR/index.html">VIZBOR</a></li>
     </ul>
 </body>
 </html>
