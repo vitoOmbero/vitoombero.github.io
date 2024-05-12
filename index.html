@@ -5,17 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 notes</title>
+    <style>
+        ul li.unchecked::marker {
+            content: '👀';
+        }
+        ul li.checked::marker {
+            content: '✔';
+        }
+        .todo {
+            text-decoration: wavy;
+            font-style: oblique;
+        }
+    </style>
 </head>
 <body>
     <h1>My HTML5 notes</h1>
+
     <h2>
-        <a href="/theme_01/index.html">Intorduction into HTML (Task #1)</a>
+        Intorduction into HTML
     </h2>
+    <h3>
+        Tasks #1
+    </h3>
     <ul>
-        <li>html tags and attributes</li>
-        <li>tables and styles</li>
-        <li>lists and styles</li>
-        <li>links</li>
+        <li class="unchecked"><a href="/theme_01/DIARY/index.html">Diary</a></li>
+        <li class="unchecked"><a href="/theme_01/VIZBOR/vizbor.html">Vizbor</a></li>
+        <li class="unchecked">Valid HTML</li>
+        <li class="unchecked">No old tags, <a href="/theme_01/TEST1/text-formatting.html">some decoration tags</a></li>
     </ul>
+    <h3>
+        Notes
+    </h3>
+    <dl>
+        <dt>
+            Styling with HTML
+        </dt>
+        <dd>
+            <p>Topic: <a href="/theme_01/index.html">First look at HTML tags</a></p>
+            <ul>
+                <li>html tags and attributes</li>
+                <li>tables and styles</li>
+                <li>lists and styles</li>
+                <li>links</li>
+            </ul>
+        </dd>
+        <dt>Modern HTML usage</dt>
+        <dd class="todo">
+            <p>Main root</p>
+            <p>Document metadata</p>
+            <p>Sectioning root</p>
+            <p>Content sectioning</p>
+            <p>Text content</p>
+            <p>Inline text semantics</p>
+            <p>Image and multimedia</p>
+            <p>Embedded content</p>
+            <p>SVG and MathML</p>
+            <p>Scripting</p>
+            <p>Demarcating edits</p>
+            <p>Table content</p>
+            <p>Forms</p>
+            <p>Interactive elements</p>
+            <p>Web Components</p>
+        </dd>
+    </dl>
 </body>
 </html>
