@@ -1,0 +1,62 @@
+ul {
+    font-size: xx-large;
+    list-style-type: none;
+}
+/* work in Firefox only
+ul .html {
+    list-style: symbols(cyclic "📃");
+}
+ul .txt {
+    list-style: symbols(cyclic "📜");
+}
+ul .dir {
+    list-style: symbols(cyclic "📁");
+}
+ul .cdup {
+    list-style: symbols(cyclic "🔝");
+}
+ul .img {
+    list-style: symbols(cyclic "🖼");
+}
+*/
+/* The way below works
+ul li::marker{
+    content: "📃";
+}
+*/
+ul {
+    font-size: xx-large;
+    list-style-type: none;
+}
+ul li:before {
+    content: '';
+    height: 25px;
+    width: 25px;
+    margin-left: 50px;
+}
+ul li.html {
+    background-image: url("https://vitoombero.github.io/img/html-39.svg");
+    background-repeat: no-repeat;
+}
+ul li.txt {
+    background-image: url("https://vitoombero.github.io/img/txt-47.svg");
+    background-repeat: no-repeat;
+}
+ul li.dir {
+    background-image: url("https://vitoombero.github.io/img/folder-directory.svg");
+    background-repeat: no-repeat;
+}
+ul li.cdup {
+    background-image: url("https://vitoombero.github.io/img/level-up-8.svg");
+    background-repeat: no-repeat;
+}
+ul li.img  {
+    background-image: url("https://vitoombero.github.io/img/picture-file-9.svg");
+    background-repeat: no-repeat;
+}
+ul li.unchecked:before {
+    content: '👀';
+}
+ul li.checked:after {
+    content: '✔';
+}
