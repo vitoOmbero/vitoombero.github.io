@@ -7,13 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comparing WEBP, JPG and PNG</title>
     <style>
-        body{
+        body {
             background-color: black;
         }
 
-        h1, h2, p {
+        h1,
+        h2,
+        p {
             background-color: aliceblue;
         }
+
         .compare {
             display: flex;
             width: 100%;
@@ -41,9 +44,28 @@
 <body>
     <main>
         <h1>Comparing WEBP, JPG and PNG</h1>
-        <p></p>
+        <p>WEBP is no worse than JPG and compresses a bit better, and compresses better than PNG</p>
         <section>
             <h2>Original JPG</h2>
+
+            <div class="compare">
+                <figure><img alt="Original JPG" src="compare original jpg/wp3301406-skyrim-art-wallpaper.jpg">
+                    <figcaption>Original JPG, size 171 kb</figcaption>
+                </figure>
+                <figure><img alt="Original to PNG" src="compare original jpg/wp3301406-skyrim-art-wallpaper 170kb.png">
+                    <figcaption>Original to PNG, size 170 kb</figcaption>
+                </figure>
+            </div>
+
+            <div class="compare">
+                <figure><img alt="Original JPG" src="compare original jpg/wp3301406-skyrim-art-wallpaper.jpg">
+                    <figcaption>Original JPG, size 171 kb</figcaption>
+                </figure>
+                <figure><img alt="Original to WEBP"
+                        src="compare original jpg/wp3301406-skyrim-art-wallpaper 165 KB.webp">
+                    <figcaption>Original to WEBP, size 164 kb</figcaption>
+                </figure>
+            </div>
 
             <div class="compare">
 
@@ -51,10 +73,10 @@
                     <figcaption>Original JPG, size 171 kb</figcaption>
                 </figure>
                 <figure><img alt="Original to PNG" src="compare original jpg/wp3301406-skyrim-art-wallpaper.png">
-                    <figcaption>Original to PNG, size 1720 kb</figcaption>
+                    <figcaption>Original to PNG 100%, size 1720 kb</figcaption>
                 </figure>
                 <figure><img alt="Original to WEBP" src="compare original jpg/wp3301406-skyrim-art-wallpaper.webp">
-                    <figcaption>Original to WEBP, size 1159 kb</figcaption>
+                    <figcaption>Original to WEBP 100%, size 1159 kb</figcaption>
                 </figure>
             </div>
 
@@ -92,10 +114,10 @@
                     <figcaption>Original PNG, size 595 kb</figcaption>
                 </figure>
                 <figure><img alt="Original to JPG" src="compare original png/pngwing.com.jpg">
-                    <figcaption>Original to JPG, size 329 kb</figcaption>
+                    <figcaption>Original to JPG 100%, size 329 kb</figcaption>
                 </figure>
                 <figure><img alt="Original to WEBP" src="compare original png/pngwing.com.webp">
-                    <figcaption>Original to WEBP, size 416 kb</figcaption>
+                    <figcaption>Original to WEBP 100%, size 416 kb</figcaption>
                 </figure>
             </div>
 
@@ -126,16 +148,47 @@
         </section>
         <section>
             <h2>Original WEBP</h2>
+
+            <div class="compare">
+
+                <figure><img alt="Original WEBP" src="compare original webp/0e24o7l627a61.webp">
+                    <figcaption>Original WEBP, size 53 kb</figcaption>
+                </figure>
+                <figure><img alt="Original to PNG" src="compare original webp/0e24o7l627a61 56-5 KB.png">
+                    <figcaption>Original to PNG, size 56,5 kb</figcaption>
+                </figure>
+            </div>
+
+            <div class="compare">
+                <figure><img alt="Original WEBP" src="compare original webp/0e24o7l627a61.webp">
+                    <figcaption>Original WEBP, size 53 kb</figcaption>
+                </figure>
+                <figure><img alt="Original to JPG" src="compare original webp/0e24o7l627a61 51.7 KB.jpg">
+                    <figcaption>Original to JPG, size 51.7 kb</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="compare">
+
+                <figure><img alt="Original to PNG" src="compare original webp/0e24o7l627a61.png">
+                    <figcaption>Original to PNG, size 417 kb</figcaption>
+                </figure>
+                <figure><img alt="Original to JPG" src="compare original webp/0e24o7l627a61.jpg">
+                    <figcaption>Original to JPG, size 252 kb</figcaption>
+                </figure>
+            </div>
+
             <div class="compare">
 
                 <figure><img alt="Original WEBP" src="compare original webp/0e24o7l627a61.webp">
                     <figcaption>Original WEBP, size 53 kb</figcaption>
                 </figure>
                 <figure><img alt="Original to PNG" src="compare original webp/0e24o7l627a61.png">
-                    <figcaption>Original to PNG, size 417 kb</figcaption>
+                    <figcaption>Original to PNG 100%, size 417 kb</figcaption>
                 </figure>
                 <figure><img alt="Original to JPG" src="compare original webp/0e24o7l627a61.jpg">
-                    <figcaption>Original to JPG, size 252 kb</figcaption>
+                    <figcaption>Original to JPG 100%, size 252 kb</figcaption>
                 </figure>
             </div>
 
