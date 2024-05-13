@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Childbook task</title>
+    <style>
+        body {
+            background-color: #fff;
+        }
+
+        figure {
+            border: #cd7ce6 solid 3px;
+            border-radius: 1rem;
+            padding: 1rem;
+            width: fit-content;
+        }
+
+        figcaption {
+            text-align: center;
+            font: italic smaller arial;
+            background-color: rgb(127, 240, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- Оргинал изозображения в формате png, т.к. предоставляет относительно максимальные возможности по цветопередаче и поддержке прозрачности -->
+        <figure><img alt="Изображение детской машинки-каталки" src="car.png" title="Выбран формат png, так как подразумевается заметить особенность перехода на границах изображения ~3px, в которыхе используются переход полупрозрачности к цвету фона #FFF">
+            <figcaption>car.png</figcaption>
+            <!-- Выбран формат png, так как подразумевается заметить особенность перехода на границах изображения ~3px, в которыхе используются переход полупрозрачности к цвету фона #FFF -->
+        </figure>
+        <figure><img alt="Изображение высокоскоростного поезда" src="train.jpeg" title="Выбран формат jpeg, так как отображение не требует прозрачности и используется больше 256 цветов">
+            <figcaption>train.jpeg</figcaption>
+            <!-- Выбран формат jpeg, так как отображение не требует прозрачности и используется больше 256 цветов -->
+        </figure>
+        <figure><img alt="Изображение иллюстрации мольберта" src="easel.gif" title="Выбран формат gif, так как отображение требует прозрачности, не требует полупрозрачности и используется меньше 256 цветов">
+            <figcaption>easel.gif</figcaption>
+            <!-- Выбран формат gif, так как отображение требует прозрачности, не требует полупрозрачности и используется меньше 256 цветов -->
+        </figure>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Childbook task</title>
+    <style>
+        body {
+            background-color: #fff;
+            text-align: center;
+        }
+
+        figure {
+            border: #cd7ce6 solid 3px;
+            border-radius: 1rem;
+            padding: 1rem;
+            width: fit-content;
+            margin: 1em auto;
+        }
+
+        ul{
+            list-style-type: decimal;
+            width: fit-content;
+            margin: auto;
+        }
+        figcaption {
+            font: italic smaller arial;
+            background-color: rgb(127, 240, 255);
+        }
+
+        div {
+            background-color: coral;
+            width: fit-content;
+            margin: 1em auto;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Предложение по улучшению задания</h1>
+        <section>
+            <h2>Пересоздать исходное избражение</h2>
+            <figure><img alt="Изображение исходное" src="childbook.png">
+                <figcaption>Исходное изображение childbook.png</figcaption>
+            </figure>
+            <p>Исходное изображение не использует прозрачность. В таком случае, корректно интерпретировать целевой
+                формат для избражения <var>car.png</var> можно двумя способами.
+            </p>
+            <ul>
+                <li>JPEG</li>
+                <li>PNG</li>
+            </ul>
+            <p>Предполагается, что нужно заметить, что <var>car.png</var> использует ~3px переход к полупрозрачности в
+                местах по границам изображения, в том числе и в нескольких местах внутри самого изображения.</p>
+            <figure><img alt="Изображение детской машинки-каталки" src="car-zones.png">
+                <figcaption>car.png с областями перехода к полпрозрачности внутри избражения</figcaption>
+            </figure>
+            <p>Но в оригинальном избражении отсутсвует переход к полупрозрачности, т.к. фон является не прозрачным, а
+                белым. А вырезать изображение с заменой фона на прозрачный, сохранив корректно опереход от границ
+                изображения к фону, не тривиальная задача, по крайней мере с инструментами, которые были упомянуты. </p>
+            <p>Фактически, обычно на практике плавный переход вырезают, когда нет доступа к исходнику. Но в данном
+                случае, нет возможности проверить, что выбор правильный на практике.</p>
+            <p>Я не нашёл ни в фильтрах <a href="https://www.photopea.com/">photopea</a>, ни в слоях, ни поиском способ,
+                в которм этот участок миксшируется с прозрачным фоном.</p>
+
+            <figure><img alt="Изображение проблемного участка" src="car-problem.png">
+                <figcaption>car-problem.png - Magic Wand отрабатывает некорректно на мелких участках.</figcaption>
+            </figure>
+
+            <figure><img alt="Изображение безпроблемного участка" src="car-not-problem.png">
+                <figcaption>car-not-problem.png - Magic Wand отрабатывает корректно на крупных участках.</figcaption>
+            </figure>
+            <figure><img alt="Изображение проблемного выбора с Magic Wand" src="car-maigc-wand-capture.png">
+                <figcaption>car-maigc-wand-capture.png - Изображение проблемного выбора с Magic Wand.</figcaption>
+            </figure>
+            <p>Лучше использовать прозрачный фон на исходном изображении, либо предоставить дополнительный исходник.</p>
+            <div>
+                <figure><img alt="Изображение вырезки с Magic Wand" src="car-cut.png">
+                    <figcaption>car-cut.png - Изображение вырезки с Magic Wand.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <h2>Проблемы нет только с train.</h2>
+            <div>
+                <figure><img alt="Изображение высокоскоростного поезда на фоне" src="train.jpeg">
+                    <figcaption>train.jpeg - Изображение высокоскоростного поезда на фоне</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <figure><img alt="Изображение иллюстрации мольберта" src="easel-cut.gif">
+                    <figcaption>easel-cut.gif - Изображение иллюстрации мольберта на фоне</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
