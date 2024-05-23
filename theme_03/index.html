@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use different fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/static/stylesheet.css">
+    <style>
+        p {
+            font-size: 2rem;
+        }
+
+        .jacquard-12-regular {
+            font-family: "Jacquard 12", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Use different fonts</h1>
+        <section>
+            <h2>Use system fonts</h2>
+            <div class="system_fonts" style="font-family: 'Bahnschrift', Comic Sans MS, sans-serif;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero cum obcaecati explicabo! Praesentium
+                    quasi enim porro ad consequuntur numquam reiciendis ipsam blanditiis sed neque autem tempore tenetur
+                    dolor, reprehenderit libero.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Use remote fonts</h2>
+            <div class="remote_fonts" style="font: 1.2em/2 'Jacquard 12', sans-serif;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero cum obcaecati explicabo! Praesentium
+                    quasi enim porro ad consequuntur numquam reiciendis ipsam blanditiis sed neque autem tempore tenetur
+                    dolor, reprehenderit libero.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Use local fonts</h2>
+            <div class="local_fonts" style="font: 0.9em/0.9 'DM Sans';">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero cum obcaecati explicabo! Praesentium
+                    quasi enim porro ad consequuntur numquam reiciendis ipsam blanditiis sed neque autem tempore tenetur
+                    dolor, reprehenderit libero.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Use fonts with unexpected language</h2>
+            <div class="local_fonts" style="font: 0.9em/0.9 'DM Sans';">
+                <p>Lorem <span style="color: red">(ХОПАНЬКИ нежданчик!!)</span> ipsum dolor sit amet, consectetur
+                    adipisicing elit. Libero cum obcaecati explicabo! Praesentium quasi enim porro ad consequuntur
+                    numquam reiciendis ipsam blanditiis sed neque autem tempore tenetur dolor, reprehenderit libero.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
