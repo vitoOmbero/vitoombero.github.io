@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.35</title>
+    <style>
+        :root {
+        --card-h: 194px;
+        --card-w: 145px;
+        }
+
+        #view {
+            overflow: auto;
+            height: 550px;
+            width: 350px;
+        }
+
+        #content {
+            image-rendering: pixelated;
+        }
+        
+        .card{
+            height: var(--card-h);
+            width: var(--card-w);
+            background: no-repeat url("images/cards2.png");
+        }
+
+        .card:hover{
+            opacity: 0.5;
+        }
+
+        #card-4♥ {
+            background-position: calc(var(--card-w)*(-3)) calc(var(--card-h)*(-2));
+        }
+        #card-J♠ {
+            background-position: calc(var(--card-w)*0) calc(var(--card-h)*(-9));
+        }
+        #card-A♣ {
+            background-position: calc(var(--card-w)*(-1)) calc(var(--card-h)*(-12));
+        }
+        #card-10♦ {
+            background-position: calc(var(--card-w)*(-2)) calc(var(--card-h)*(-8));
+        }
+    </style>
+</head>
+
+<body>
+    <div id="view"><img id="content" src="images/cards2.png" alt="cards" /></div>
+
+    <hr>
+
+    <div id="card-4♥" class="card"></div>
+    <div id="card-J♠" class="card"></div>
+    <div id="card-A♣" class="card"></div>
+    <div id="card-10♦" class="card"></div>
+</body>
+
+</html>
