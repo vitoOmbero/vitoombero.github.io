@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS intro</title>
+    <style>
+        /*
+        *{
+            box-sizing: border-box;
+        }
+        */
+        .with_margin {
+            width: 200px;
+            height: 100px;
+            background-color: coral;
+            border-color: red;
+            border-style: dashed;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div style="width: 300px; background-color: blueviolet; box-sizing: content-box; padding: 15px;">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore voluptatum quidem pariatur magnam ullam porro nemo quibusdam. Laudantium est eveniet, expedita necessitatibus fugiat quaerat animi, sint consequatur numquam, assumenda ex.
+        </div>
+        <div style="width: 300px; background-color: rgb(58, 226, 43); padding: 15px; box-sizing: border-box;">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic sed nesciunt optio veritatis tempore, rerum porro eligendi mollitia iste fugiat laborum recusandae magnam molestiae possimus voluptates, modi nostrum? Officia, libero.
+        </div>
+
+        <div style="width: 200px; background-color: rgb(152, 156, 152); padding: 15px;
+        border: red 5px dashed;
+        border-right-color: blue;">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic sed nesciunt optio veritatis tempore, rerum porro eligendi mollitia iste fugiat laborum recusandae magnam molestiae possimus voluptates, modi nostrum? Officia, libero.
+        </div>
+
+        <div style="width: 200px; background-color: rgb(152, 156, 152); padding: 15px;
+        border: rgb(187, 255, 0) 2px double;">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic sed nesciunt optio veritatis tempore, rerum porro eligendi mollitia iste fugiat laborum recusandae magnam molestiae possimus voluptates, modi nostrum? Officia, libero.
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div id="d1" class="with_margin" style="
+        padding: 20px;
+        margin: 50px;
+        ">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div id="d2" class="with_margin" style="
+        padding:50px;
+        margin:100px;
+        ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+        <div id="d3" class="with_margin" style="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+        <!-- margin дочернего элемента вылазит на марджин родительского кроме трёх случаев:
+        если родительскому устаанвливается padding
+        если родительскому добавляется border
+        если уставнваливается overflow
+        -->
+
+        <!-- слева направо сверху вниз -->
+    </main>
+</body>
+</html>
