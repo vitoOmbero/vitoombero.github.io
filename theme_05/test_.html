@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        font-weight: 600;
+        font-size: 3em;
+    }
+    [href^="http"]{
+        color: red;
+    }
+    [href^="https"]{
+        color: green;
+    }
+    [title$="r"]{
+        text-decoration: line-through;
+    }
+    [title*="a"]{
+        font-style: italic;
+    }
+    [title="av"]{
+        font-size: 4em;
+    }
+    div span{
+        color: blueviolet;
+    }
+    div > span{
+        color: rgb(197, 160, 37);
+    }
+    div > div > span{
+        color: brown;
+        text-decoration: line-through;
+    }
+</style>
+<body>
+    <span>span1</span>
+    <div>
+        <span>span2</span>
+        <a href="https://www.onliner.by" title="onliner">onliner.by</a>
+        <a href="http://www.kufar.by" title="kufar">kufar.by</a>
+        <a href="https://www.av.by" title="av">av.by</a>
+        <div>
+            <span>span3</span>
+        </div>
+    </div>
+</body>
+</html>
