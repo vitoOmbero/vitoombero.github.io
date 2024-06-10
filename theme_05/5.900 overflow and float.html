@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and float</title>
+</head>
+
+<body>
+    <img src="img/sinatra.jpg" style="float: left; margin: 4px">
+    <div style="border: solid blue 1px">
+        Фрэнк Синатра<br>1915-1998
+    </div>
+
+
+    <hr style="clear: both;">
+
+    <div style="border: solid red 1px">
+        <img src="img/ball3.png" style="float: left; margin: 10px 10px 0 20px">
+        <h3 style="background-color: yellow;
+                border-bottom: solid black 1px">
+            Дельфиниум</h3>
+        Своё научное латинское название растение получило, возможно, из-за сходства цветка с формой головы и тела
+        дельфина.
+    </div>
+
+    <hr style="clear: both;">
+
+    <div style="border: solid red 1px">
+        <img src="img/ball3.png" style="float: left; margin: 10px 10px 0 20px">
+        <h3 style="background-color: yellow;
+                border-bottom: solid black 1px; overflow: hidden">
+            Дельфиниум</h3>
+        Своё научное латинское название растение получило, возможно, из-за сходства цветка с формой головы и тела
+        дельфина.
+    </div>
+
+    <hr style="clear: both;">
+
+    <h2>Floating child is excluded from parent's 2d space</h2>
+
+    <div style="border: solid red 1px; padding: 3px">
+        <img src="img/ball3.png" style="float: left; margin: 4px">
+        <div style="border: solid blue 1px">
+            Мяч футбольный.<br>
+            Покупай, не проиграешь!
+        </div>
+    </div>
+
+    <hr style="clear: both;">
+
+    <h2>Clearfix</h2>
+
+    <div style="border: solid red 1px; padding: 3px">
+        <img src="img/ball3.png" style="float: left; margin: 4px">
+        <div style="border: solid blue 1px">
+            Мяч футбольный.<br>
+            Покупай, не проиграешь!
+        </div>
+        <div style="clear: both; border: solid green 1px">
+        </div>
+    </div>
+
+    <hr style="clear: both;">
+
+    <h2>Add overflow to parent</h2>
+
+    <div style="border: solid red 1px; padding: 3px;
+    overflow: hidden">
+        <img src="img/ball3.png" style="float: left; margin: 4px">
+        <div style="border: solid blue 1px">
+            Мяч футбольный.<br>
+            Покупай, не проиграешь!
+        </div>
+    </div>
+
+    <hr style="clear: both;">
+
+    <h2>Add float to parent</h2>
+
+    <div style="border: solid red 1px; padding: 3px;
+    float: left; width: 246px">
+        <img src="img/ball3.png" style="float: left; margin: 4px">
+        <div style="border: solid blue 1px">
+            Мяч футбольный.<br>
+            Покупай, не проиграешь!
+        </div>
+    </div>
+
+</body>
+
+</html>

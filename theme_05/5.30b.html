@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.30b Block layout, footer has no clear both (2)</title>
+    <style>
+        div{
+            border-width: 0px;
+        }
+        #header{
+            text-align: center;
+            padding: 20px;
+            background-color: yellow;
+            height: 50px;
+        }
+        #left{
+            width: 15%;
+            float: left;
+            background-color: blue;
+            height: 200px;
+        }
+        #right{
+            width: 200px;
+            float: right;
+            background-color: green;
+            height: 300px;
+        }
+        #main{
+            margin-left: 15%;
+            margin-right: 200px;
+            background-color: red;
+            height: 210px;
+        }
+        #footer{
+            background-color: brown;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="main">like previous but less not enough content</div>
+    <div id="footer"></div>
+</body>
+</html>

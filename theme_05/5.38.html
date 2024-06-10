@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.38 Div total size problem</title>
+</head>
+
+<body>
+    <div style='float: left; width: 70%; height: 20px; background-color: red'></div>
+    <div style='float: left; width: 30%; height: 20px; background-color: blue'></div>
+
+    <div style='clear: both'></div>
+    <br />
+
+    <div style='float: left; width: 70%; height: 20px; border: solid red 1px'></div>
+    <div style='float: left; width: 30%; height: 20px; border: solid blue 1px'></div>
+
+    <div style='clear: both'></div>
+    <br />
+
+    <div style='float: left; width: 70%'>
+        <div style='height: 20px; border: solid red 1px'></div>
+    </div>
+    <div style='float: left; width: 30%'>
+        <div style='height: 20px; border: solid blue 1px'></div>
+    </div>
+</body>
+
+</html>
