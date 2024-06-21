@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like ball12.png</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            border-image-source: url("img/ball3.png");
+            border-image-width: 100px;
+            border-image-slice: 100;
+            border-image-repeat: stretch;
+        }
+        .left{
+            background-color: #6dacac;
+            width: 20%;
+            float: left;
+            height: 216px;
+        }
+        .mid{
+            background-color: #c07475;
+            margin-left: 20%;
+            margin-right: 200px;
+        }
+        .right{
+            background-color: #d1a0da;
+            width: 200px;
+            float: right;
+        }
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .main{
+            overflow: hidden;
+            height: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="main clearfix">
+        <div class="left">width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% </div>
+        <div class="right">width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px </div>
+        <div class="mid clearfix">контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент контент </div>
+    </div>
+    
+
+</body>
+</html>
