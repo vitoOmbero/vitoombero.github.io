@@ -1,0 +1,47 @@
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+
+.nav ul.left{
+    display: flex;
+    background-color: yellow;
+    width: 29%;
+    justify-content: space-around;
+}
+
+.nav ul.right{
+    display: flex;
+    background-color: red;
+    width: 23%;
+    justify-content: space-around;
+}
+
+#lang{
+    position: absolute;
+    right: 30px;
+}
+
+
+.banner {
+    background-color: black;
+    color: white;
+    height: 46px;
+    text-align: center;
+    position: relative;
+}
+
+.banner p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
