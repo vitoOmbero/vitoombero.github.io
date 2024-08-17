@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+
+    <style>
+        div {
+            margin: 10;
+        }
+
+        div a {
+            color: green;
+        }
+
+        div a:hover {
+            color: red;
+        }
+
+        div li {
+            display: inline;
+        }
+
+        div ul{
+            list-style: none inside;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        div.case1 li::before{
+            content: '|';
+            font-size: large;
+            color: red;
+            font: bold 1.5rem "Fira Sans", sans-serif;
+            margin: 0 10px;
+        }
+
+        div.case1 li:first-child:before{
+            content: "";
+            margin: 0;
+        }
+
+        div.case2 span{
+            font-size: large;
+            color: red;
+            font: bold 1.5rem "Fira Sans", sans-serif;
+            margin: 0 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3>Case 1</h3> <!-- the default implementaion, I believe--> <!-- implementation can be done with CSV image too-->
+    <div class="case1">
+        <ul>
+            <li><a href="http://onliner.by">onliner.by</a></li>
+            <li><a href="https://www.gismeteo.by">gismeteo.by</a></li>
+            <li><a href="https://www.kp.by">kp.by</a></li>
+            <li><a href="https://deal.by">deal.by</a></li>
+            <li><a href="http://talks.by">talks.by</a></li>
+        </ul>
+    </div>
+    <h3>Case 2</h3> <!-- less CSS code, but it is hardcorded styling in HTML--> <!-- there are the same pitfalls if image is used -->
+    <div class="case2">
+        <ul>
+            <li><a href="http://onliner.by">onliner.by</a></li>
+            <li><span>|</span><a href="https://www.gismeteo.by">gismeteo.by</a></li>
+            <li><span>|</span><a href="https://www.kp.by">kp.by</a></li>
+            <li><span>|</span><a href="https://deal.by">deal.by</a></li>
+            <li><span>|</span><a href="http://talks.by">talks.by</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
