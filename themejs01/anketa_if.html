@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anketa if</title>
+</head>
+
+<body>
+    <script>
+        var prompts = [
+            "фамилию",
+            "имя",
+            "отчество",
+            "возраст (г.)",
+            "пол мужской",
+            "пол женский"
+        ];
+
+        function ask(index) {
+            var message = "Введите " + prompts[index] + ": ";
+            switch (index) {
+                case 0:
+                case 1:
+                case 2:
+                    var txt = prompt(message);
+                    var isText = isNaN(txt);
+                    if (isText){
+                        return txt;
+                    }
+                    return null;
+                case 3:
+                    debugger
+                    var num = parseInt(prompt(message));
+                    var isNum = Number(num);
+                    if (isNum){
+                        return num;
+                    }
+                    return null;
+                case 4:
+                case 5:
+                    var shift = Math.floor(Math.random() * 2);
+                    var s = confirm("Ваш " + prompts[4 + shift] + ": ");
+                    if (shift === 5) return !s;
+                    return s;
+                default:
+                    break;
+            }
+            return "error";
+        }
+
+        do
+        {
+
+        var surname = ask(0);
+        var name = ask(1);
+        var fathername = ask(2);
+        var age = ask(3);
+        var sex = ask(4);
+
+        var validInput = (surname !== null) &&
+            (name !== null) &&
+            (fathername !== null) &&
+            (age !== null);
+
+        if (!validInput){
+            confirm("Во время ввода допущены ошибки, введите праметры снова...");
+        }
+
+        } while (!validInput)
+
+        var strSex;
+        if (sex){
+            strSex = "мужской"
+        }
+        else {
+            strSex = "женский"
+        }
+
+        var ret;
+        if (sex){
+            ret = age >= 62;
+        }
+        else {
+            ret = age >= 57;
+        }
+
+        var strRet;
+        if (ret){
+            strRet = "да"
+        }
+        else {
+            strRet = "нет"
+        }
+   
+        var m = 
+        `ваше ФИО: ${surname} ${name} ${fathername}\n` +
+        `ваш возраст в годах: ${age}\n` +
+        `ваш возраст в днях: ${365*age}\n` +
+        `через 5 лет вам будет: ${5 + age}\n` + 
+        `ваш пол: ${strSex}\n` + 
+        `вы на пенсии: ${strRet}\n`;
+
+        alert(m);
+    </script>
+</body>
+
+</html>
